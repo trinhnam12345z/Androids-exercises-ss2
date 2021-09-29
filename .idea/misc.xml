@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Tool cc/Android/AndroidStudioProjects/BT2/app/src/main/res/layout/activity_check_box.xml" value="0.264" />
         <entry key="..\:/Tool cc/Android/AndroidStudioProjects/BT2/app/src/main/res/layout/activity_giai_phuong_trinh.xml" value="0.264" />
+        <entry key="..\:/Tool cc/Android/AndroidStudioProjects/BT2/app/src/main/res/layout/activity_giai_thua.xml" value="0.259375" />
         <entry key="..\:/Tool cc/Android/AndroidStudioProjects/BT2/app/src/main/res/layout/activity_main.xml" value="0.2553846153846154" />
         <entry key="..\:/Tool cc/Android/AndroidStudioProjects/BT2/app/src/main/res/layout/activity_so_sanh.xml" value="0.259375" />
         <entry key="..\:/Tool cc/Android/AndroidStudioProjects/BT2/app/src/main/res/layout/activity_tinh.xml" value="0.264" />
