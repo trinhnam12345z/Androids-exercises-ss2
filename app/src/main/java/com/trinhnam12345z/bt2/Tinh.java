@@ -17,43 +17,36 @@ public class Tinh extends AppCompatActivity {
         setContentView(R.layout.activity_tinh);
 
     }
-    public void Cong(View view){
+    public void Tinh(View view){
         EditText editA = findViewById(R.id.editA);
         EditText editB = findViewById(R.id.editB);
+        EditText phepTinh = findViewById(R.id.editPhepTinh);
         TextView txtKetqua = findViewById(R.id.txtKetqua);
-        float a = Float.parseFloat(editA.getText().toString());
-        float b = Float.parseFloat(editB.getText().toString());
-        float ketqua = a + b ;
-        txtKetqua.setText(String.valueOf(ketqua));
-    }
-    public void Tru(View view){
-        EditText editA = findViewById(R.id.editA);
-        EditText editB = findViewById(R.id.editB);
-        TextView txtKetqua = findViewById(R.id.txtKetqua);
-        float a = Float.parseFloat(editA.getText().toString());
-        float b = Float.parseFloat(editB.getText().toString());
-        float ketqua = a - b ;
-        txtKetqua.setText(String.valueOf(ketqua));
-    }
 
-    public void Nhan(View view){
-        EditText editA = findViewById(R.id.editA);
-        EditText editB = findViewById(R.id.editB);
-        TextView txtKetqua = findViewById(R.id.txtKetqua);
         float a = Float.parseFloat(editA.getText().toString());
         float b = Float.parseFloat(editB.getText().toString());
-        float ketqua = a * b ;
-        txtKetqua.setText(String.valueOf(ketqua));
-    }
+        String pt = phepTinh.getText().toString();
+        float ketqua;
 
-    public void Chia(View view){
-        EditText editA = findViewById(R.id.editA);
-        EditText editB = findViewById(R.id.editB);
-        TextView txtKetqua = findViewById(R.id.txtKetqua);
-        float a = Float.parseFloat(editA.getText().toString());
-        float b = Float.parseFloat(editB.getText().toString());
-        float ketqua = a / b ;
-        txtKetqua.setText(String.valueOf(ketqua));
+        switch (pt){
+            case "+":
+                ketqua = a + b ;
+                txtKetqua.setText(String.valueOf(ketqua));
+                break;
+            case "-":
+                ketqua = a - b ;
+                txtKetqua.setText(String.valueOf(ketqua));
+                break;
+            case "*":
+                ketqua = a * b ;
+                txtKetqua.setText(String.valueOf(ketqua));
+                break;
+            case "/":
+                ketqua = a / b ;
+                txtKetqua.setText(String.valueOf(ketqua));
+                break;
+            default: txtKetqua.setText("Phép tính không hợp lệ !");
+        }
     }
 
 }

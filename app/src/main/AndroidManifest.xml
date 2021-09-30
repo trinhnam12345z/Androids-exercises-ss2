@@ -9,12 +9,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.BT2">
-
-        <!-- <activity -->
-        <!-- android:name=".Tinh" -->
-        <!-- android:exported="true" /> -->
+<!--        <activity-->
+<!--            android:name=".ListViewCoBan"-->
+<!--            android:exported="true" />-->
         <activity
             android:name=".GiaiThua"
+            android:exported="true" />
+        <activity
+            android:name=".ListViewCoBan"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

@@ -10,7 +10,7 @@
         android:id="@+id/editA"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="50dp"
         android:hint="Nhập A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,71 +21,49 @@
         android:id="@+id/editB"
         android:layout_width="0dp"
         android:layout_height="050dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="50dp"
         android:hint="Nhập B"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editA" />
+        app:layout_constraintTop_toBottomOf="@+id/editPhepTinh" />
 
     <Button
         android:id="@+id/btnCong"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:onClick="Cong"
-        android:text="+"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editB" />
-
-    <Button
-        android:id="@+id/btnTru"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:onClick="Tru"
-        android:text="-"
-        app:layout_constraintStart_toEndOf="@+id/btnCong"
-        app:layout_constraintTop_toBottomOf="@+id/editB" />
-
-    <Button
-        android:id="@+id/btnNhan"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:onClick="Nhan"
-        android:text="*"
-        app:layout_constraintStart_toEndOf="@+id/btnTru"
-        app:layout_constraintTop_toBottomOf="@+id/editB" />
-
-    <Button
-        android:id="@+id/btnChia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="8dp"
-        android:onClick="Chia"
-        android:text="/"
+        android:layout_marginTop="50dp"
+        android:onClick="Tinh"
+        android:text="Tính"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/btnNhan"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editB" />
 
     <TextView
         android:id="@+id/txtKetqua"
         android:layout_width="380dp"
         android:layout_height="34dp"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="50dp"
         android:text="Kết Quả"
+        android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold"
         android:typeface="sans"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editB" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCong" />
+
+    <EditText
+        android:id="@+id/editPhepTinh"
+        android:layout_width="413dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Phép tính"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editA" />
 </androidx.constraintlayout.widget.ConstraintLayout>
