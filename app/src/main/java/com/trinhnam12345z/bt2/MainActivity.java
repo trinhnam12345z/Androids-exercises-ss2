@@ -29,8 +29,8 @@ public class MainActivity extends AppCompatActivity {
 
         if(username.equals("admin") && password.equals("admin")){
             Intent GT = new Intent(MainActivity.this,GiaiThua.class);
-            startActivity(GT);
             GT.putExtra("username", username);
+            startActivity(GT);
         }else{
             Toast.makeText(MainActivity.this,"Đăng nhập thất bại !",Toast.LENGTH_LONG).show();
         }
