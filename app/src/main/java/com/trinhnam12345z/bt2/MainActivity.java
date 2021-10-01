@@ -28,8 +28,8 @@ public class MainActivity extends AppCompatActivity {
         String password = txtPassword.getText().toString();
 
         if(username.equals("admin") && password.equals("admin")){
-            Intent GT = new Intent(MainActivity.this,GiaiThua.class);
-            GT.putExtra("username", username);
+            Intent GT = new Intent(MainActivity.this,ListViewNangCao.class);
+//            GT.putExtra("username", username);
             startActivity(GT);
         }else{
             Toast.makeText(MainActivity.this,"Đăng nhập thất bại !",Toast.LENGTH_LONG).show();
